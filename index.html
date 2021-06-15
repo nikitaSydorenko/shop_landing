@@ -16,15 +16,28 @@
         <div class="product__item-image">
             <div class="container-images">
                 <img class="popular" src="images/100px.png" alt="">
-
-                <img src="images/DSC09153%201.png" alt="" class="product__image">
+                <img src="images/DSC09153%201.png" alt="" class="product__image main__image">
             </div>
+            <div class="slider">
+                <div class="slider__image" onclick="imageSwitcher(this)">
+                    <img src="images/DSC09122%20(1)%201%20(1).png" alt="" id="img1" class="product__image">
+                </div>
+
+                <div class="slider__image" onclick="imageSwitcher(this)">
+                    <img src="images/DSC09153%201.png" alt="" id="img2" class="product__image">
+                </div>
+
+                <div class="slider__image" onclick="imageSwitcher(this)">
+                    <img src="images/DSC09153%201.png" alt="" id="img3" class="product__image">
+                </div>
+            </div>
+
         </div>
         <div class="product__info">
             <div class="container__info">
-               <h2 class="product__title">
-                   ViriFerti Vitamins for Fertility
-               </h2>
+                <h2 class="product__title">
+                    ViriFerti Vitamins for Fertility
+                </h2>
                 <div class="product__evaluation">
                     <ul class="evaluation__stars">
                         <li class="evaluation__star">
@@ -43,7 +56,7 @@
                             <i class="fas fa-star"></i>
                         </li>
                     </ul>
-                    <p class="evaluation__reviews"><a href="#">Reviews 35</a></p>
+                    <p class="evaluation__reviews"><a href="#">35 Reviews</a></p>
                 </div>
                 <p class="product__text">
                     New formula! With antioxidant vitamins and
@@ -53,49 +66,49 @@
             <div class="container__info">
                 <ul class="paragraphs">
                     <li class="paragraphs__list">
-                        <i class="far fa-heart"></i>
+                        <img src="images/smallHeart.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="far fa-heart"></i>
+                        <img src="images/smallHeart.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="far fa-heart"></i>
+                        <img src="images/smallHeart.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="far fa-heart"></i>
+                        <img src="images/smallHeart.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                 </ul>
             </div>
             <div class="container__info">
                 <div class="buttons__semanas-group">
-                    <div class="button__semanas">
+                    <div class="button__semanas" onclick="toggleTab(this)">
                         <h6 class="semanas__title">4 semanas</h6>
                         <p class="semanas__price">R$28/month</p>
                     </div>
-                    <div class="button__semanas">
+                    <div class="button__semanas" onclick="toggleTab(this)">
                         <h6 class="semanas__title">6 semanas</h6>
                         <p class="semanas__price">R$28/month</p>
                     </div>
-                    <div class="button__semanas sale">
+                    <div class="button__semanas sale" onclick="toggleTab(this)">
                         <h6 class="semanas__title">9 semanas</h6>
                         <p class="semanas__price">R$20/month</p>
-                        <div class="banner">
+                        <p class="banner">
                             Save 30%
-                        </div>
+                        </p>
                     </div>
-
                 </div>
                 <div class="button__buy">
-                    <button class="button__buy-now">
+                    <button class="button__buy-now popup" onclick="simplePopup()">
                         Buy now
+                        <span class="popuptext" id="myPopup">Famivita</span>
                     </button>
                 </div>
                 <div class="delivery__box">
-                    <i class="fas fa-truck"></i>
+                    <img src="images/delivery.png" alt="">
                     <h6 class="delivery__free-days">
                         FREE 1 day Delivery
                     </h6>
@@ -111,19 +124,15 @@
             <div class="container__info">
                 <ul class="paragraphs">
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/16%20px.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/16%20px.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
-                        <p class="paragraph__text">Paragraph text here</p>
-                    </li>
-                    <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/16%20px.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                 </ul>
@@ -132,15 +141,16 @@
     </div>
 </section>
 <section class="main">
+
         <div class="container-fluid container__tabs">
             <div class="tabs">
-                <div class="tab">
+                <div class="tab" onclick="toggleTabMain(this)">
                     <h4 class="tab__text">description</h4>
                 </div>
-                <div class="tab">
+                <div class="tab" onclick="toggleTabMain(this)">
                     <h4 class="tab__text">reviews</h4>
                 </div>
-                <div class="tab">
+                <div class="tab " onclick="toggleTabMain(this)">
                     <h4 class="tab__text">details</h4>
                 </div>
             </div>
@@ -154,25 +164,25 @@
             </div>
             <div class="icons">
                 <div class="icon__container">
-                    <i class="fas fa-check"></i>
+                    <img src="images/Vector%2020.png" alt="">
                     <p class="content__icon">
                         Indicated by gynecologists
                     </p>
                 </div>
                 <div class="icon__container">
-                    <i class="fas fa-check"></i>
+                    <img src="images/drops.png" alt="">
                     <p class="content__icon">
                         Indicated by gynecologists
                     </p>
                 </div>
                 <div class="icon__container">
-                    <i class="far fa-heart" ></i>
+                    <img src="images/heart.png" alt="">
                     <p class="content__icon">
                         Indicated by gynecologists
                     </p>
                 </div>
                 <div class="icon__container">
-                    <i class="fas fa-check"></i>
+                    <img src="images/Group%20260.png" alt="">
                     <p class="content__icon">
                         Indicated by gynecologists
                     </p>
@@ -180,7 +190,8 @@
             </div>
         </div>
 </section>
-<section class="description-product">
+<section class="description-product" id="wave">
+
     <div class="container-fluid">
         <div class="main__image">
             <img src="images/DSC09122%20(1)%201%20(1).png" alt="">
@@ -204,19 +215,19 @@
                 </p>
                 <ul class="paragraphs">
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/smalldrop.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/smalldrop.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/smalldrop.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                     <li class="paragraphs__list">
-                        <i class="fas fa-check"></i>
+                        <img src="images/smalldrop.png" alt="">
                         <p class="paragraph__text">Paragraph text here</p>
                     </li>
                 </ul>
@@ -235,11 +246,17 @@
                     other health conditions.”
                 </p>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7MdZL5hqye4?controls=0"
-                    frameborder="0" ></iframe>
-
+        <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/SWx8GnUZoYI?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer;
+                autoplay; clipboard-write; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen></iframe>
     </div>
 </section>
+
 <script src="index.js" type="text/javascript"> </script>
 <script src="https://kit.fontawesome.com/cbf8bf4da4.js" crossorigin="anonymous"></script>
 </body>
